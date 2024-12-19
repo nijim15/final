@@ -1,0 +1,1174 @@
+/* 기본 스타일 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+/* 큰 박스 크기 */
+.container {
+    width: 1920px;
+    height: 5878px;
+    background-color: #fff2d4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative; /* 자식 요소에 절대 위치를 적용할 수 있도록 설정 */
+}
+
+/* back_line 이미지 박스 (319px, 2002px 위치에 배치) */
+.back-line-box {
+    width: 1063px;
+    height: 2815px;
+    position: absolute;
+    top: 2002px; /* 세로 위치 2002px */
+    left: 319px; /* 가로 위치 319px */
+    z-index: 0; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* back-line-box 안에 이미지 크기 조정 */
+.back-line-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 1920x1109.24 크기의 이미지 박스 */
+.image-box {
+    width: 1920px;
+    height: 1109.24px;
+    background-color: transparent; /* 배경 투명 */
+    overflow: hidden;
+    position: relative; /* 부모 요소가 위치 기준 */
+}
+
+/* 이미지 크기 조정 */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 1920x1376.6 크기의 두 번째 이미지 박스 (첫 번째 박스 아래와 260px 겹치게 배치) */
+.second-image-box {
+    width: 1920px;
+    height: 1376.6px;
+    background-color: transparent; /* 배경 투명 */
+    position: absolute;
+    top: 849.24px; /* 첫 번째 박스의 아래와 260px 겹치게 배치 (1109.24px - 260px) */
+    left: 0;
+    z-index: 0; /* 다른 박스들보다 뒤로 배치 */
+    overflow: hidden;
+}
+
+/* 두 번째 이미지 크기 조정 */
+.second-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 729x736 크기의 작은 박스 (상단 왼쪽에 배치) */
+.small-box {
+    width: 729px;
+    height: 736px;
+    background-color: transparent; /* 배경 투명 */
+    position: absolute;
+    top: 0; /* 위쪽에 붙임 */
+    left: 0; /* 왼쪽에 붙임 */
+    z-index: 1; /* 이미지 박스 위로 올리기 */
+    overflow: hidden;
+}
+
+/* 작은 박스 안에 이미지 크기 조정 */
+.small-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 789x517 크기의 박스 (오른쪽 벽에 붙이고 위에서 312px 떨어짐) */
+.bee-box {
+    width: 789px;
+    height: 517px;
+    background-color: transparent; /* 배경 투명 */
+    position: absolute;
+    top: 312px; /* 위에서 312px 떨어짐 */
+    right: 0; /* 오른쪽 벽에 붙임 */
+    overflow: hidden;
+    z-index: 2; /* 다른 박스보다 위로 올리기 */
+}
+
+/* bee-box 안에 이미지 크기 조정 */
+.bee-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 99x197 크기의 첫 번째 아트 박스 */
+.art-box {
+    width: 99px;
+    height: 197px;
+    position: absolute;
+    top: 1101px; /* 세로 위치 1101px */
+    left: 443px; /* 가로 위치 443px */
+    z-index: 3; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* art-box 안에 이미지 크기 조정 */
+.art-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 75x157 크기의 두 번째 아트 박스 (1596px, 1694px 위치에 배치) */
+.art2-box {
+    width: 75px;
+    height: 157px;
+    position: absolute;
+    top: 1694px; /* 세로 위치 1694px */
+    left: 1596px; /* 가로 위치 1596px */
+    z-index: 4; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* art2-box 안에 이미지 크기 조정 */
+.art2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+
+/* 295x338 크기의 박스 (636px, 2346px 위치에 배치) */
+.three-p2-box {
+    width: 295px;
+    height: 338px;
+    position: absolute;
+    top: 2346px; /* 세로 위치 2346px */
+    left: 636px; /* 가로 위치 636px */
+    z-index: 6; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* three-p2-box 안에 이미지 크기 조정 */
+.three-p2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 294x254 크기의 박스 (1041px, 2184px 위치에 배치) */
+.three-p1-box {
+    width: 294px;
+    height: 254px;
+    position: absolute;
+    top: 2184px; /* 세로 위치 2184px */
+    left: 1041px; /* 가로 위치 1041px */
+    z-index: 7; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* three-p1-box 안에 이미지 크기 조정 */
+.three-p1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 296x339 크기의 박스 (1220px, 2597px 위치에 배치) */
+.three-p3-box {
+    width: 296px;
+    height: 339px;
+    position: absolute;
+    top: 2597px; /* 세로 위치 2597px */
+    left: 1220px; /* 가로 위치 1220px */
+    z-index: 8; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* three-p3-box 안에 이미지 크기 조정 */
+.three-p3-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 294x255 크기의 박스 (901px, 2844px 위치에 배치) */
+.three-p4-box {
+    width: 294px;
+    height: 255px;
+    position: absolute;
+    top: 2844px; /* 세로 위치 2844px */
+    left: 901px; /* 가로 위치 901px */
+    z-index: 9; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* three-p4-box 안에 이미지 크기 조정 */
+.three-p4-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 196x312 크기의 박스 (1724px, 2332px 위치에 배치) */
+.back-1-box {
+    width: 196px;
+    height: 312px;
+    position: absolute;
+    top: 2332px; /* 세로 위치 2332px */
+    left: 1724px; /* 가로 위치 1724px */
+    z-index: 10; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* back-1-box 안에 이미지 크기 조정 */
+.back-1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 471x844 크기의 박스 (0px, 2306px 위치에 배치) */
+.back-2-box {
+    width: 471px;
+    height: 844px;
+    position: absolute;
+    top: 2306px; /* 세로 위치 2306px */
+    left: 0px;   /* 가로 위치 0px */
+    z-index: 11; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* back-2-box 안에 이미지 크기 조정 */
+.back-2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 166x262 크기의 박스 (414px, 2355px 위치에 배치) */
+.three-p2-2-box {
+    width: 166px;
+    height: 262px;
+    position: absolute;
+    top: 2355px; /* 세로 위치 2355px */
+    left: 414px; /* 가로 위치 414px */
+    z-index: 12; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* three-p2-2-box 안에 이미지 크기 조정 */
+.three-p2-2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 18x18 크기의 원 (942px, 2337px 위치에 배치) */
+.circle-box {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 2337px; /* 세로 위치 2337px */
+    left: 942px; /* 가로 위치 942px */
+    background-color: #271a09; /* 색상 설정 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    z-index: 13; /* 다른 박스들보다 위로 배치 */
+}
+/* 18x18 크기의 원들 (각각 1076px, 2464px / 1141px, 2726px / 1242px, 2972px 위치에 배치) */
+.circle-box-1 {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 2464px; /* 세로 위치 2464px */
+    left: 1076px; /* 가로 위치 1076px */
+    background-color: #271a09; /* 색상 설정 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    z-index: 14; /* 다른 박스들보다 위로 배치 */
+}
+
+.circle-box-2 {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 2726px; /* 세로 위치 2726px */
+    left: 1141px; /* 가로 위치 1141px */
+    background-color: #271a09; /* 색상 설정 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    z-index: 15; /* 다른 박스들보다 위로 배치 */
+}
+
+.circle-box-3 {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 2972px; /* 세로 위치 2972px */
+    left: 1242px; /* 가로 위치 1242px */
+    background-color: #271a09; /* 색상 설정 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    z-index: 16; /* 다른 박스들보다 위로 배치 */
+}
+/* 129.5x194.25 크기의 박스 (649px, 3265.76px 위치에 배치) */
+.bee-box-1 {
+    width: 129.5px;
+    height: 194.25px;
+    position: absolute;
+    top: 3185.76px; /* 세로 위치 3265.76px */
+    left: 649px; /* 가로 위치 649px */
+    z-index: 17; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+    transform: rotate(-63.36deg); /* 63.36도 회전 */
+}
+
+/* bee-box-1 안에 이미지 크기 조정 */
+.bee-box-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 232x280 크기의 박스 (311px, 3373px 위치에 배치) */
+.four-p1-box {
+    width: 323px;
+    height: 280px;
+    position: absolute;
+    top: 3373px; /* 세로 위치 3373px */
+    left: 311px; /* 가로 위치 311px */
+    z-index: 18; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* four-p1-box 안에 이미지 크기 조정 */
+.four-p1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 343x279 크기의 박스 (554px, 3523px 위치에 배치) */
+.four-p2-box {
+    width: 343px;
+    height: 279px;
+    position: absolute;
+    top: 3523px; /* 세로 위치 3523px */
+    left: 554px; /* 가로 위치 554px */
+    z-index: 19; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* four-p2-box 안에 이미지 크기 조정 */
+.four-p2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 322x279 크기의 박스 (808px, 3378px 위치에 배치) */
+.four-p3-box {
+    width: 322px;
+    height: 279px;
+    position: absolute;
+    top: 3378px; /* 세로 위치 3378px */
+    left: 808px; /* 가로 위치 808px */
+    z-index: 20; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* four-p3-box 안에 이미지 크기 조정 */
+.four-p3-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 51x36 크기의 박스 (695px, 3433px 위치에 배치) */
+.four-p-line-box {
+    width: 51px;
+    height: 36px;
+    position: absolute;
+    top: 3433px; /* 세로 위치 3433px */
+    left: 695px; /* 가로 위치 695px */
+    z-index: 21; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* four-p-line-box 안에 이미지 크기 조정 */
+.four-p-line-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 303x352 크기의 박스 (1154px, 3794px 위치에 배치) */
+.five-p1-box {
+    width: 303px;
+    height: 352px;
+    position: absolute;
+    top: 3794px; /* 세로 위치 3794px */
+    left: 1154px; /* 가로 위치 1154px */
+    z-index: 22; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* five-p1-box 안에 이미지 크기 조정 */
+.five-p1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 299x287 크기의 박스 (1392px, 3931px 위치에 배치) */
+.five-p2-box {
+    width: 299px;
+    height: 287px;
+    position: absolute;
+    top: 3931px; /* 세로 위치 3931px */
+    left: 1392px; /* 가로 위치 1392px */
+    z-index: 23; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* five-p2-box 안에 이미지 크기 조정 */
+.five-p2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 299x259 크기의 박스 (1393px, 4204px 위치에 배치) */
+.five-p3-box {
+    width: 299px;
+    height: 259px;
+    position: absolute;
+    top: 4204px; /* 세로 위치 4204px */
+    left: 1393px; /* 가로 위치 1393px */
+    z-index: 24; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* five-p3-box 안에 이미지 크기 조정 */
+.five-p3-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 295x322 크기의 박스 (1157px, 4344px 위치에 배치) */
+.five-p4-box {
+    width: 295px;
+    height: 322px;
+    position: absolute;
+    top: 4344px; /* 세로 위치 4344px */
+    left: 1157px; /* 가로 위치 1157px */
+    z-index: 25; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* five-p4-box 안에 이미지 크기 조정 */
+.five-p4-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 298x351 크기의 박스 (918px, 4204px 위치에 배치) */
+.five-p5-box {
+    width: 298px;
+    height: 351px;
+    position: absolute;
+    top: 4204px; /* 세로 위치 4204px */
+    left: 918px; /* 가로 위치 918px */
+    z-index: 26; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* five-p5-box 안에 이미지 크기 조정 */
+.five-p5-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 297x257 크기의 박스 (919px, 3931px 위치에 배치) */
+.five-p6-box {
+    width: 297px;
+    height: 257px;
+    position: absolute;
+    top: 3931px; /* 세로 위치 3931px */
+    left: 919px; /* 가로 위치 919px */
+    z-index: 27; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* five-p6-box 안에 이미지 크기 조정 */
+.five-p6-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 121x181 크기의 박스 (1053px, 3831px 위치에 배치) */
+.bee-1-box {
+    width: 121px;
+    height: 181px;
+    position: absolute;
+    top: 3831px; /* 세로 위치 3831px */
+    left: 1053px; /* 가로 위치 1053px */
+    z-index: 28; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* bee-1-box 안에 이미지 크기 조정 */
+.bee-1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 116x186 크기의 박스 (1312px, 4226px 위치에 배치) */
+.bee-2-box {
+    width: 116px;
+    height: 186px;
+    position: absolute;
+    top: 4226px; /* 세로 위치 4226px */
+    left: 1312px; /* 가로 위치 1312px */
+    z-index: 29; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* bee-2-box 안에 이미지 크기 조정 */
+.bee-2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 565x826 크기의 박스 (0px, 4102px 위치에 배치) */
+.back-4-box {
+    width: 565px;
+    height: 826px;
+    position: absolute;
+    top: 4102px; /* 세로 위치 4102px */
+    left: 0px; /* 가로 위치 0px */
+    z-index: 30; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* back-4-box 안에 이미지 크기 조정 */
+.back-4-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 301x417 크기의 박스 (1619px, 4442px 위치에 배치) */
+.back-5-box {
+    width: 301px;
+    height: 417px;
+    position: absolute;
+    top: 4442px; /* 세로 위치 4442px */
+    left: 1619px; /* 가로 위치 1619px */
+    z-index: 31; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* back-5-box 안에 이미지 크기 조정 */
+.back-5-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 291x267 크기의 박스 (512px, 4833px 위치에 배치) */
+.six-p1-box {
+    width: 291px;
+    height: 267px;
+    position: absolute;
+    top: 4833px; /* 세로 위치 4833px */
+    left: 512px; /* 가로 위치 512px */
+    z-index: 32; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* six-p1-box 안에 이미지 크기 조정 */
+.six-p1-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 291x266.79 크기의 박스 (745px, 4978px 위치에 배치) */
+.six-p2-box {
+    width: 291px;
+    height: 266.79px;
+    position: absolute;
+    top: 4978px; /* 세로 위치 4978px */
+    left: 745px; /* 가로 위치 745px */
+    z-index: 33; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* six-p2-box 안에 이미지 크기 조정 */
+.six-p2-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 291x266.77 크기의 박스 (984px, 4833px 위치에 배치) */
+.six-p3-box {
+    width: 291px;
+    height: 266.77px;
+    position: absolute;
+    top: 4833px; /* 세로 위치 4833px */
+    left: 984px; /* 가로 위치 984px */
+    z-index: 34; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* six-p3-box 안에 이미지 크기 조정 */
+.six-p3-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+/* 1920x833.91 크기의 박스 (0px, 5044px 위치에 배치) */
+.back-honey-box {
+    width: 1920px;
+    height: 833.91px;
+    position: absolute;
+    top: 5044px; /* 세로 위치 5044px */
+    left: 0; /* 가로 위치 0px */
+    z-index: 35; /* 다른 박스들보다 위로 배치 */
+    overflow: hidden;
+}
+
+/* back-honey-box 안에 이미지 크기 조정 */
+.back-honey-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하면서 박스를 꽉 채움 */
+}
+.jua-font {
+    font-family: 'Jua', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* 주아 폰트 로드 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+/* 텍스트 박스 스타일 */
+.text-box2 {
+  font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+  font-size: 10px; /* 폰트 크기 10px */
+  line-height: 180%; /* 줄 간격 180% */
+  color: #271a09; /* 텍스트 색상 주황색 */
+  position: absolute;
+  top: 1863px; /* 세로 위치 1863px */
+  left: 854px; /* 가로 위치 854px */
+  z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+.text-box1 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 32px; /* 폰트 크기 32px */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 1247px; /* 세로 위치 1247px */
+    left: 840px; /* 가로 위치 833px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box3 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 24px; /* 폰트 크기 32px */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2110px; /* 세로 위치 1247px */
+    left: 615px; /* 가로 위치 833px */
+    z-index: 0; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box4 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 16px; /* 폰트 크기 32px */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2449px; /* 세로 위치 1247px */
+    left: 1150px; /* 가로 위치 833px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box5 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 16px; /* 폰트 크기 32px */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2617px; /* 세로 위치 1247px */
+    left: 750px; /* 가로 위치 833px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box6 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 16px; /* 폰트 크기 32px */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2869px; /* 세로 위치 1247px */
+    left: 1333px; /* 가로 위치 833px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box7 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 16px; /* 폰트 크기 32px */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3118px; /* 세로 위치 1247px */
+    left: 1010px; /* 가로 위치 833px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box8 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2257px; /* 세로 위치 1863px */
+    left: 1347px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box9 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2287px; /* 세로 위치 1863px */
+    left: 1347px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box10 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2644px; /* 세로 위치 1863px */
+    left: 438px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box11 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2674px; /* 세로 위치 1863px */
+    left: 438px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box12 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2488px; /* 세로 위치 1863px */
+    left: 1347px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box13 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 2538px; /* 세로 위치 1863px */
+    left: 1347px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box14 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3018px; /* 세로 위치 1863px */
+    left: 700px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box15 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3078px; /* 세로 위치 1863px */
+    left: 700px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box16 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 24px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3358px; /* 세로 위치 1863px */
+    left: 637px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box17 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3815px; /* 세로 위치 1863px */
+    left: 674px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box18 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3663px; /* 세로 위치 1863px */
+    left: 900px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box19 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3484px; /* 세로 위치 1863px */
+    left: 1166px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box20 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3515px; /* 세로 위치 1863px */
+    left: 1166px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box21 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3736px; /* 세로 위치 1863px */
+    left: 377px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box22 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3766px; /* 세로 위치 1863px */
+    left: 377px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box23 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 17px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #fff2d4; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3841px; /* 세로 위치 1863px */
+    left: 1275px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box24 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3931px; /* 세로 위치 1863px */
+    left: 1245px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box25 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 17px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #fff2d4; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3975px; /* 세로 위치 1863px */
+    left: 1510px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box26 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4081px; /* 세로 위치 1863px */
+    left: 1491px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box27 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 17px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #fff2d4; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4259px; /* 세로 위치 1863px */
+    left: 1500px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box28 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4353px; /* 세로 위치 1863px */
+    left: 1500px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box29 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 17px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #fff2d4; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4397px; /* 세로 위치 1863px */
+    left: 1280px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box30 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4490px; /* 세로 위치 1863px */
+    left: 1261px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box31 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 17px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #fff2d4; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4259px; /* 세로 위치 1863px */
+    left: 1050px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box32 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4353px; /* 세로 위치 1863px */
+    left: 1040px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box33 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 17px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #fff2d4; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3982px; /* 세로 위치 1863px */
+    left: 1040px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box34 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #f9c553; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4082px; /* 세로 위치 1863px */
+    left: 1030px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box35 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 24px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4167px; /* 세로 위치 1863px */
+    left: 1241px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box36 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3826px; /* 세로 위치 1863px */
+    left: 1457px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box37 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4093px; /* 세로 위치 1863px */
+    left: 1699px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box38 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4353px; /* 세로 위치 1863px */
+    left: 1686px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box39 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4346px; /* 세로 위치 1863px */
+    left: 741px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box40 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4376px; /* 세로 위치 1863px */
+    left: 741px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box41 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 13px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 3970px; /* 세로 위치 1863px */
+    left: 741px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box42 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 10px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4000px; /* 세로 위치 1863px */
+    left: 741px; /* 가로 위치 854px */
+    z-index: 10; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box43 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 24px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4955px; /* 세로 위치 1863px */
+    left: 630px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box44 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 24px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 4955px; /* 세로 위치 1863px */
+    left: 1100px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: left; /* 텍스트 가운데 정렬 */
+  }
+  .text-box45 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 16px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 5067px; /* 세로 위치 1863px */
+    left: 795px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  /* 124x186 크기의 박스 (790px, 5007px 위치에 배치) */
+.flipped-bee-box {
+    width: 124px;
+    height: 186px;
+    position: absolute;
+    top: 5007px; /* 세로 위치 */
+    left: 670px; /* 가로 위치 */
+    overflow: hidden;
+    z-index: 60; /* 필요에 따라 조정 */
+  }
+  
+  /* 이미지 스타일: 좌우 반전 */
+  .flipped-bee-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지 */
+    transform: scaleX(-1); /* 좌우 반전 */
+  }
+  .text-box46 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 38px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 300px; /* 세로 위치 1863px */
+    left: 836px; /* 가로 위치 854px */
+    z-index: 60; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  .text-box47 {
+    font-family: 'Jua', sans-serif; /* Jua 폰트 사용 */
+    font-size: 14px; /* 폰트 크기 10px */
+    line-height: 180%; /* 줄 간격 180% */
+    color: #271a09; /* 텍스트 색상 주황색 */
+    position: absolute;
+    top: 5728px; /* 세로 위치 1863px */
+    left: 836px; /* 가로 위치 854px */
+    z-index: 70; /* 다른 요소들 위에 위치하도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  
